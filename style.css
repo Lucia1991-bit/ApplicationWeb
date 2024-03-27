@@ -2,7 +2,17 @@
 
 @font-face {
   font-family: "MyFont";
-  src: url("./font/creamfont-3.0.otf") format("opentype");
+  src: url("./font/SweiSpringCJKtc-Medium_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MyFont-semiBold";
+  src: url("./font/SweiSpringSugarCJKtc-SemiBold_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MyFont-bold";
+  src: url("./font/SweiSpringSugarCJKtc-Bold_0.ttf") format("truetype");
 }
 
 * {
@@ -278,6 +288,7 @@ a.enter {
 }
 
 .faq-header .faq-header-title {
+  font-family: "Mulish", "MyFont-bold", sans-serif;
   flex: 1 1 600px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -285,6 +296,7 @@ a.enter {
   padding-right: auto;
   align-self: flex-end;
   font-size: 1.75rem;
+  font-weight: 700;
   text-align: center;
   letter-spacing: 5px;
   color: #ffa727;
@@ -349,6 +361,8 @@ a.enter {
 }
 
 .faq-title {
+  font-family: "Mulish", "MyFont-semiBold", sans-serif;
+  font-weight: 600;
   margin: 0 30px 0 0;
   font-size: 1.25rem;
   z-index: 99;
@@ -365,14 +379,14 @@ a.enter {
   z-index: 99;
 }
 
-.faq-text span{
+.faq-text span {
   font-weight: 700;
 }
 
 .faq-text a {
   font-size: 1.2rem;
   text-decoration: none;
-  color: #64A0BE;
+  color: #64a0be;
 }
 
 .faq-text a:hover,
@@ -390,11 +404,10 @@ a.enter {
   margin-top: 20px;
 }
 
-
 .faq.active .faq-text {
   display: block;
 }
- 
+
 .faq.active ul {
   margin-top: 0;
   margin-left: 23px;
@@ -403,7 +416,7 @@ a.enter {
 
 .faq.active ul > li {
   margin: 20px 0;
-  list-style-type: none!important;
+  list-style-type: none !important;
 }
 
 .faq.active ul > li:before {
@@ -411,9 +424,9 @@ a.enter {
   font-size: 1rem;
   content: "\f138";
   position: absolute;
-  left : -1.5rem;
+  left: -1.5rem;
   margin-right: 3px;
-  color: #64A0BE;
+  color: #64a0be;
   z-index: 1;
 }
 
@@ -483,7 +496,7 @@ a.enter {
 
 @media (min-width: 2000px) {
   .header-text {
-    width: 680px;   
+    width: 680px;
     top: 14%;
     left: 10%;
     gap: 30px;
@@ -522,9 +535,7 @@ a.enter {
     padding: 0 300px;
     padding-bottom: 100px;
   }
-  
-
-}  
+}
 
 @media (max-width: 1200px) {
   .header-text {
@@ -549,6 +560,10 @@ a.enter {
     letter-spacing: 0.075rem;
     margin-bottom: 20px;
   }
+
+  .faq-container {
+    padding: 0 90px;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -560,7 +575,7 @@ a.enter {
 
   .header-deco {
     position: absolute;
-    left:0;
+    left: 0;
     top: 399px;
     margin: -1;
     overflow: hidden;
@@ -641,9 +656,8 @@ a.enter {
   .faq-text a {
     font-size: 1.1rem;
     text-decoration: none;
-    color: #64A0BE;
+    color: #64a0be;
   }
-
 }
 
 @media (max-width: 730px) {
@@ -673,7 +687,7 @@ a.enter {
   }
 
   .nav h3.name-for-mobile {
-    font-family: "Mulish", "MyFont", sans-serif;;
+    font-family: "Mulish", "MyFont", sans-serif;
     display: block;
     font-size: 1.05rem;
     letter-spacing: 4px;
@@ -683,11 +697,11 @@ a.enter {
     display: none;
   }
 
-  .header-deco { 
+  .header-deco {
     position: absolute;
     left: 0;
     margin: -1;
-    top: 9.90vh;
+    top: 9.9vh;
     width: 100%;
     overflow: hidden;
     /* display: none; */
@@ -753,7 +767,7 @@ a.enter {
   }
 
   .faq-text {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 20px;
   }
 
@@ -765,7 +779,7 @@ a.enter {
   .faq-text a {
     font-size: 0.8rem;
     text-decoration: none;
-    color: #64A0BE;
+    color: #64a0be;
   }
 
   .faq.active ul {
@@ -778,7 +792,7 @@ a.enter {
 
   .faq.active ul > li:before {
     font-size: 0.8rem;
-    left : -1.15rem;
+    left: -1.15rem;
     margin-right: 2px;
   }
 
